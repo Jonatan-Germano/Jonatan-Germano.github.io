@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <style>
+        * { /*define a fonte de todos os elementos*/
+	        font-family: Calibri;
+	    }
+
+        body{ /*cor da página e margem para ocupar o espaço inteiro*/
+            margin: 0;
+            background-color: black;
+        }
+
+        .container { /*cria container para distribuir os elementos*/
+            display: grid;
+            color: white;
+        }
+
+        header { /*cor e posição do cabeçalho*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+        }
+
+        .menu { /*cria e centraliza o menu com limite de 20 px*/
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+        }
+
+        .principal { /*posiciona o texto principal do centro para a esquerda e define a cor*/
+            grid-column-start: 7;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer { /*cria rodapé e centraliza o texto*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+            color: white;
+            text-align: center;
+
+        }
+
+        .card { /*card para os trabalhos realizados*/
+            display: flex;
+            flex-flow: row wrap;
+            text-align: center ;
+
+        }
+
+        ul { /*cria lista para os links*/
+            list-style-type: none;
+            color: brown;
+        }
+
+        a,
+        a:link { /*cor dos links*/
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid white 1px;
+            color: white;
+        }
+
+        li { /*para cada elemento ser colocado da esquerda para a direita*/
+            float: left;
+        }
+
+        a:hover { /*cor dos links ao passar o cursor*/
+            background-color: brown;
+            color: white;
+        }
+
+        .img { /*formato de imagem para o card*/
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .h1 { /*titulo do tópico*/
+            color:white;
+            text-align: center;
+        }
+
+        @media all and (min-width: 35rem) { /*adequa o card pra diferentes tamanhos de tela*/
+            body { /*definição da margem*/
+                margin: 0 auto; 
+            }
+
+
+            .img { /*tamanho minimo para os cards*/
+                max-width: 28rem;
+                margin: 1rem;
+                align-content: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="container"> <!--chama a classe container para adequar o cabeçalho-->
+        <h1 class="h1">Portifólio</h1>
+        <br>
+    </header>
+    <nav class="container menu"> <!--chama a classe e a menu para acrescentar os links-->
+        <ul> <!--cria a lista e acrescenta os links-->
+            <li><a href="JonatanGermano.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper"> <!--cria espaço para o texto principal-->
+        <section class=" principal"> <!--chama a classe principal-->
+            <h1> <!--Título-->
+                Trabalhos realizados
+            </h1>
+            <div class="card"> <!--classe do card-->
+                <div class="img"> <!--divisão para classe do formato de imagem-->
+                    <a href="Trabalho - Relatorio.pdf" style="border:black; color:white">Banco de Dados</a> <!--link e personalização-->
+                    <div> <!--divisão para texto-->
+                        <h2>Banco de Dados</h2> <!--Título-->
+                        <p>Realizado no MySQL</p> <!--descrição-->
+                    </div>
+                </div>
+                <div class="img"> <!--divisão para classe do formato de imagem-->
+                    <a href="Jonatan_Germano(FSI).pdf" style="border: black; color:white">FSI</a> <!--link e personalização-->
+                    <div> <!--divisão para texto-->
+                        <h2>Fundamentos<br> de Sistemas<br> de Informação</h2> <!--Título-->
+                        <p>Realizado com estudos de caso </p> <!--descrição-->
+                    </div>
+                </div>
+                <div class="img"> <!--divisão para classe do formato de imagem-->
+                    <a href="JonatanGermanoDesignInteracao.pdf" style="border:black; color:white">Design de Interação</a> <!--link e personalização-->
+                    <div> <!--divisão para texto-->
+                        <h2>Design de Interação</h2> <!--Título-->
+                        <p>Realizado no Figma</p> <!--descrição-->
+                    </div>
+                </div>
+                <div class="img"> <!--divisão para classe do formato de imagem-->
+                    <a href="JonatanGermanoEngSoft.pdf" style="border:black; color: white">Engenharia de Software</a> <!--link e personalização-->
+                    <div> <!--divisão para texto-->
+                        <h2>Engenharia<br> de Software</h2> <!--Título-->
+                        <p>Realizado com estudos de caso<br> <!--descrição-->
+                            e com Lucidart</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container"> <!--classe do rodapé--> 
+        <h1> Desenvolvido por Jonatan</h1> <!--texto do rodapé-->
+    </footer>
+    </footer>
+    </div>
+</body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Pessoal</title>
+    <style>
+        * { /*define a fonte de todos os elementos*/
+	        font-family: Calibri;
+	    }
+
+        body{ /*cor da página e margem para ocupar o espaço inteiro*/
+            margin: 0;
+            background-color: black;
+        }
+
+        .container { /*cria container para distribuir os elementos*/
+            display: grid;
+            color: white;
+        }
+
+        header { /*cor e posição do cabeçalho*/
+            grid-column-start:  1;
+            grid-column-end:  12;
+            background-color: brown;
+        }
+ 
+        .menu { /*cria e centraliza o menu com limite de 20 px*/
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+        }
+
+        footer { /*cria rodapé e centraliza o texto*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:brown;
+            color: white;
+            text-align: center;
+        }
+        
+        ul { /*cria lista para os links*/
+            list-style-type: none;
+        }
+
+        a,
+        a:link { /*cor dos links*/
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid white 1px;
+            color: white;
+        }
+
+        li { /*para cada elemento ser colocado da esquerda para a direita*/
+            float: left;
+        }
+
+        a:hover { /*cor dos links ao passar o cursor*/
+            background-color: brown;
+            color: white;
+        }
+
+        .h1 { /*titulo do tópico*/
+            color:white;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="container"> <!--chama a classe container para adequar o cabeçalho-->
+        <h1 class="h1">Contato</h1>
+        <br>
+    </header>
+    <nav class="container menu"> <!--chama a classe e a menu para acrescentar os links-->
+        <ul> <!--cria a lista e acrescenta os links-->
+            <li><a href="JonatanGermano.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+    <h1 class="h1">Entre em Contato</h1> <!--titulo-->
+    <form action="" method="" class="container menu"> <!--cria o formulario para mensagem-->
+        <table> <!--tabela sem bordas para o form-->
+            <tr><!--cria  1 linha-->
+                <th><label for="nome" style="color: white;">Nome:</label></th> <!--titulo do nome-->
+                <td><input type="text" name="nome" id="nome"></td> <!--cria 1 coluna para a caixa de texto para inserir o nome-->
+            </tr>
+            <tr> <!--cria  1 linha-->
+                <th><label for="email" style="color: white;">E-mail:</label></th> <!--titulo do e-mail-->
+                <td><input type="email" name="email" id="email"></td> <!--cria 1 coluna para a caixa de texto para inserir o nome-->
+            </tr>
+            <tr><!--cria  1 linha-->
+                <th><label for="msg">Mensagem:</label> <!--titulo do mensagem-->
+                </th>
+                <td><textarea name="msg" rows="7" cols="60"></textarea> ></textarea></td> <!--cria caixa de texto para a mensagem-->
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button>Enviar</button></td><!--texto e botão para enviar a mensagem-->
+            </tr>
+        </table>
+    </form>
+    <footer class="container"> <!--classe do rodapé--> 
+        <h1> Desenvolvido por Jonatan</h1> <!--texto do rodapé--> 
+    </footer>
+    </footer>
+    </div>
+</body>

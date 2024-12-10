@@ -1,0 +1,112 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação</title>
+    <style>
+        * { /*define a fonte de todos os elementos*/
+	        font-family: Calibri;
+	    }
+
+        body{ /*cor da página e margem para ocupar o espaço inteiro*/
+            margin: 0;
+            background-color: black;
+        }
+
+        .container { /*cria container para distribuir os elementos*/
+            display: grid;
+            color: white;
+        }
+
+        header { /*cor e posição do cabeçalho*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+        }
+
+        .menu { /*cria e centraliza o menu com limite de 20 px*/
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+        }
+
+        .principal { /*posiciona o texto principal do centro para a esquerda e define a cor*/
+            grid-column-start: 7;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            color: white;
+        }
+
+        ul { /*cria lista para os links*/
+            list-style-type: none;
+        }
+
+        a,
+        a:link { /*cor dos links*/
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid white 1px;
+            color:white;
+        }
+
+        li { /*para cada elemento ser colocado da esquerda para a direita*/
+            float: left;
+        }
+
+        a:hover { /*cor dos links ao passar o cursor*/
+            background-color: brown;
+            color: white;
+        }
+
+        footer { /*cria rodapé e centraliza o texto*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: brown;
+            text-align: center;
+        }
+
+        .h1 { /*titulo do tópico*/
+            color:white;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="container"> <!--chama a classe container para adequar o cabeçalho-->
+        <h1 class="h1">Formação</h1>
+        <br>
+    </header>
+    <nav class="container menu"> <!--chama a classe e a menu para acrescentar os links-->
+        <ul> <!--cria a lista e acrescenta os links-->
+            <li><a href="JonatanGermano.html">Sobre</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav> 
+    <div class="container wrapper"> <!--cria espaço para o texto principal-->
+        <section class="principal"> <!--chama a classe principal-->
+            <h1> <!--Título-->
+                Minha Formação
+            </h1>
+            <p> <!--texto principal-->
+                Ensino Infantil e Fundamental I - Escola Municipal Prof. Ulisses Falcão Viera 2007-2013<br>
+                Ensino Fundamental II - Escola Estadual Monsenhor Ivo Zanlorenzi e Escola Estadual Dom Pedro II - 2014-2017<br>
+                Ensino Médio - Colégio Estadual do Paraná e Colégio Estadual Dr. Xavier da Silva - 2018-2020<br>
+                Ensino Superior - Universidade Federal do Paraná - 2021-2022 Incompleto<br>
+                Ensino Superior - Centro Universitário Uninter - 07/2024-Até o momento</p>
+        </section>
+    </div>
+    <footer class="container"> <!--classe do rodapé-->
+        <h1>Desenvolvido por Jonatan</h1> <!--texto do rodapé-->
+    </footer>
+    </div>
+</body>
+
+</html>
